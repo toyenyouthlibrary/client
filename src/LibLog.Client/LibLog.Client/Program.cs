@@ -8,7 +8,7 @@ namespace LibLog.Client
         public static void Main()
         {
             Application.EnableVisualStyles();
-            Application.Run(new MainWindow());
+            Application.Run(new MainForm());
         }
     }
 }

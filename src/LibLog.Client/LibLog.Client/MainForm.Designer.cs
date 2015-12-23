@@ -1,6 +1,6 @@
 ﻿namespace LibLog.Client
 {
-    partial class MainWindow
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.webControl = new Awesomium.Windows.Forms.WebControl(this.components);
             this.SuspendLayout();
             // 
-            // webControl
-            // 
-            this.webControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webControl.Location = new System.Drawing.Point(0, 0);
-            this.webControl.Size = new System.Drawing.Size(784, 562);
-            this.webControl.Source = new System.Uri("http://toyenyouthlibrary.github.io/client/tests/", System.UriKind.Absolute);
-            this.webControl.TabIndex = 0;
-            // 
-            // MainWindow
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 562);
-            this.Controls.Add(this.webControl);
-            this.Name = "MainWindow";
+            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainWindow";
+            this.Text = "MainForm";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Awesomium.Windows.Forms.WebControl webControl;
     }
 }

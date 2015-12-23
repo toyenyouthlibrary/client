@@ -36,30 +36,26 @@
     <StartupObject>LibLog.Client.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Awesomium.Core, Version=1.7.5.1, Culture=neutral, PublicKeyToken=e1a0d7c8071a5214, processorArchitecture=x86" />
-    <Reference Include="Awesomium.Windows.Forms, Version=1.7.5.1, Culture=neutral, PublicKeyToken=9bd24830fbe304a0, processorArchitecture=x86" />
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JavaScript.cs" />
-    <Compile Include="MainWindow.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainWindow.Designer.cs">
-      <DependentUpon>MainWindow.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="WebViewElementUpdater.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="MainWindow.resx">
-      <DependentUpon>MainWindow.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
