@@ -42,6 +42,7 @@
             this.webControl.NavigationInfo = Awesomium.Core.NavigationInfo.None;
             this.webControl.Size = new System.Drawing.Size(640, 416);
             this.webControl.Source = new System.Uri("http://toyenyouthlibrary.github.io/client/tests/rfid/", System.UriKind.Absolute);
+            this.webControl.Source = new System.Uri("http://127.0.0.1:5000", System.UriKind.Absolute);
             this.webControl.TabIndex = 0;
             // 
             // loadingOverlay
