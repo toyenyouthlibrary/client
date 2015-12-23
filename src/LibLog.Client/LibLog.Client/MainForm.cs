@@ -10,6 +10,7 @@ namespace LibLog.Client
         {
             this.InitializeComponent();
             this.InitializeMaterialSkin();
+            this.InitializeWebControl();
         }
 
         private void InitializeMaterialSkin()
@@ -19,6 +20,19 @@ namespace LibLog.Client
                                                            Primary.BlueGrey500,
                                                            Accent.LightBlue200,
                                                            TextShade.WHITE);
+        }
+
+        private void InitializeWebControl()
+        {
+            this.webControl.LoadingFrame += (o, e) =>
+            {
+                this.loadingOverlay.Visible = true;
+            };
+
+            this.webControl.LoadingFrameComplete += (o, e) =>
+            {
+                this.loadingOverlay.Visible = false;
+            };
         }
     }
 }
