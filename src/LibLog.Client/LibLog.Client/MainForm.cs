@@ -28,12 +28,18 @@ namespace LibLog.Client
         {
             this.webControl.LoadingFrame += (o, e) =>
             {
-                this.loadingOverlay.Visible = true;
+                if (this.loadingOverlay.Enabled)
+                {
+                    this.loadingOverlay.Visible = true;
+                }
             };
 
             this.webControl.LoadingFrameComplete += (o, e) =>
             {
-                this.loadingOverlay.Visible = false;
+                if (this.loadingOverlay.Enabled)
+                {
+                    this.loadingOverlay.Visible = false;
+                }
             };
         }
     }

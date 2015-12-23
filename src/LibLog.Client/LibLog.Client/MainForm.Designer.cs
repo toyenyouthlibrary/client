@@ -50,6 +50,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.loadingOverlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.loadingOverlay.Enabled = false;
             this.loadingOverlay.Location = new System.Drawing.Point(0, 64);
             this.loadingOverlay.Name = "loadingOverlay";
             this.loadingOverlay.Size = new System.Drawing.Size(640, 416);
