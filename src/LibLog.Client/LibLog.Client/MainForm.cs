@@ -22,8 +22,6 @@ namespace LibLog.Client
                                                                    Primary.BlueGrey500,
                                                                    Accent.LightBlue200,
                                                                    TextShade.WHITE);
-
-
         }
     }
 }
