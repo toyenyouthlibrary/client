@@ -84,6 +84,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>mkdir $(SolutionDir)bin
+copy $(TargetDir)LibLog.Client.exe $(SolutionDir)bin\LibLog.exe
+copy $(TargetDir)Awesomium.Core.dll $(SolutionDir)bin\Awesomium.Core.dll
+copy $(TargetDir)Awesomium.Windows.Forms.dll $(SolutionDir)bin\Awesomium.Windows.Forms.dll
+copy $(TargetDir)awesomium.dll $(SolutionDir)bin\awesomium.dll
+copy $(TargetDir)awesomium_process $(SolutionDir)bin\awesomium_process
+copy $(TargetDir)icudt.dll $(SolutionDir)bin\icudt.dll
+copy $(TargetDir)MaterialSkin.dll $(SolutionDir)bin\MaterialSkin.dll</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

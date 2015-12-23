@@ -1,4 +1,5 @@
 ﻿using System;
+using Awesomium.Core;
 using MaterialSkin;
 using MaterialSkin.Controls;
 
@@ -8,6 +9,14 @@ namespace LibLog.Client
     {
         public MainForm()
         {
+            if (!WebCore.IsInitialized)
+            {
+                WebCore.Initialize(new WebConfig()
+                {
+                    LogLevel = LogLevel.None
+                });
+            }
+
             this.InitializeComponent();
             this.InitializeMaterialSkin();
             this.InitializeWebControl();
