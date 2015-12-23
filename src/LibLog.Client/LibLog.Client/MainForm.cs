@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Windows.Forms;
+using MaterialSkin.Controls;
 
 namespace LibLog.Client
 {
-    public partial class MainForm : Form
+    public partial class MainForm : MaterialForm
     {
         public MainForm()
         {
