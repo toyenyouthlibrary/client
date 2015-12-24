@@ -21,7 +21,7 @@ namespace LibLog.Client
             this.InitializeMaterialSkin();
             this.InitializeWebControl();
 
-            Utilities.MaximizeMaterialForm(this, true);
+            this.Maximize(true);
         }
 
         private void InitializeMaterialSkin()
